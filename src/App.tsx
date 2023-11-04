@@ -7,6 +7,7 @@ export const colors = {
   corBackground: "#ffffff",
   corBackgroundSecundaria: "#e5e5e5",
   corPrincipal: "#291569",
+  corTextoBasico: "#b1b1b1",
 };
 function App() {
   return (
