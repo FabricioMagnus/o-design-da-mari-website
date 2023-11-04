@@ -1,0 +1,11 @@
+@keyframes colorChange {
+  0% {
+    background: linear-gradient(45deg, #ff0080, #7928ca);
+  }
+  50% {
+    background: linear-gradient(45deg, #7928ca, #ff0080);
+  }
+  100% {
+    background: linear-gradient(45deg, #ff0080, #7928ca);
+  }
+}
