@@ -45,13 +45,18 @@ function App() {
         justifyContent={"flex-end"}
       >
         {Menu.map((item) => (
-          <Text color={colors.corBackground} mx={4}>
+          <Text
+            color={colors.corBackground}
+            mx={4}
+            fontWeight={"bold"}
+            fontSize={{ lg: "lg", md: "md", sm: "sm" }}
+          >
             {item.label}
           </Text>
         ))}
       </Flex>
       <FirstBox />
-      <SecondBox />
+      {/* <SecondBox /> */}
     </Flex>
   );
 }
