@@ -56,8 +56,11 @@ export default function FirstBox() {
             w={{ lg: "500px", md: "400px", sm: "400px" }}
             h={{ lg: "500px", md: "400px", sm: "400px" }}
             justifyContent={"center"}
-            bgColor={"#EF9908"}
+            backgroundImage={"./foto-mari.png"}
+            bgColor={"#FFF"}
             borderRadius={"50%"}
+            backgroundSize={"cover"}
+            backgroundPosition={"center"}
           ></Flex>
         </Flex>
       </Flex>
