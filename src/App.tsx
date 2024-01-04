@@ -2,6 +2,8 @@
 import { Flex, Text } from "@chakra-ui/react";
 import FirstBox from "./components/firstBox";
 import SecondBox from "./components/secondBox";
+import ThirdBox from "./components/thirdBox";
+import FourthBox from "./components/FourthBox";
 
 export const colors = {
   corBackground: "#ffffff",
@@ -34,6 +36,7 @@ function App() {
       bgColor={"#ffffff"}
       color={colors.corBackground}
       alignItems={"center"}
+      overscrollY={"auto"}
       flexDir={"column"}
     >
       <Flex
@@ -56,7 +59,9 @@ function App() {
         ))}
       </Flex>
       <FirstBox />
-      {/* <SecondBox /> */}
+      <SecondBox />
+      <ThirdBox />
+      <FourthBox />
     </Flex>
   );
 }

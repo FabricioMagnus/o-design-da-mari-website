@@ -5,7 +5,7 @@ import { colors } from "../App";
 export default function FirstBox() {
   return (
     <Flex
-      w={"100%"}
+      w={"99.2vw"}
       h={{ lg: "94vh", md: "fit-content", sm: "fit-content" }}
       backgroundColor={"#000"}
       boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
