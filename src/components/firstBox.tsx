@@ -53,8 +53,8 @@ export default function FirstBox() {
           alignItems={"center"}
         >
           <Flex
-            w={"500px"}
-            h={"500px"}
+            w={{ lg: "500px", md: "400px", sm: "400px" }}
+            h={{ lg: "500px", md: "400px", sm: "400px" }}
             justifyContent={"center"}
             bgColor={"#EF9908"}
             borderRadius={"50%"}
