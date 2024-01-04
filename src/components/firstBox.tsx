@@ -32,7 +32,7 @@ export default function FirstBox() {
         >
           <Text
             color={colors.corBackground}
-            fontSize={{ lg: "xl", md: "md", sm: "sm" }}
+            fontSize={{ lg: "xl", md: "md", sm: "md" }}
             my={"auto"}
             fontFamily="Century Gothic"
           >
@@ -48,7 +48,7 @@ export default function FirstBox() {
         </Flex>
         <Flex
           w={{ lg: "50%", md: "100%", sm: "100%" }}
-          h={{ lg: "100%", md: "40vh", sm: "40vh" }}
+          h={{ lg: "100%", md: "32vh", sm: "32vh" }}
           justifyContent={"center"}
           alignItems={"center"}
         >
