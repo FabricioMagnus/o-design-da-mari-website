@@ -66,7 +66,7 @@ export default function SecondBox() {
           alignItems={"center"}
         >
           <Flex w={"60%"} h={"90%"} bgColor={"black"}>
-            <CustomSwiper setPage={setPage}>
+            <CustomSwiper setPage={setPage} bgColor={"#BF1266"}>
               {Images.map((image, index) => (
                 <Image key={index} src={image.src} alt={image.alt} />
               ))}

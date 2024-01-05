@@ -21,9 +21,14 @@ import React, { ReactNode } from "react";
 interface CustomSwiperProps {
   children: ReactNode;
   setPage: (page: number) => void;
+  bgColor: string;
 }
 
-export default function CustomSwiper({ children, setPage }: CustomSwiperProps) {
+export default function CustomSwiper({
+  children,
+  setPage,
+  bgColor,
+}: CustomSwiperProps) {
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
@@ -74,7 +79,7 @@ export default function CustomSwiper({ children, setPage }: CustomSwiperProps) {
               w={"100%"}
               h={"100%"}
               // bgColor={"#D32982"}
-              backgroundColor={"#BF1266"}
+              backgroundColor={bgColor}
               justifyContent={"center"}
             >
               {child}
