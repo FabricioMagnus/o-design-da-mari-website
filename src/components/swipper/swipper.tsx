@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/effect-creative";
 import "./styles.css";
 import {
   Pagination,
@@ -11,6 +12,8 @@ import {
   Scrollbar,
   A11y,
   Mousewheel,
+  EffectCreative,
+  Autoplay,
 } from "swiper/modules";
 import { Flex } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
@@ -31,12 +34,35 @@ export default function CustomSwiper({ children, setPage }: CustomSwiperProps) {
   return (
     <>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[
+          Navigation,
+          Pagination,
+          Scrollbar,
+          A11y,
+          EffectCreative,
+          Autoplay,
+        ]}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
         spaceBetween={2}
+        loop={true}
+        grabCursor={true}
+        effect={"creative"}
         slidesPerView={1}
         pagination={pagination}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper: any) => {}}
+        creativeEffect={{
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        }}
         onSlideChange={(swipper) => {
           setPage(swipper.realIndex + 1);
         }}
