@@ -43,7 +43,7 @@ export default function CustomSwiper({ children, setPage }: CustomSwiperProps) {
           Autoplay,
         ]}
         autoplay={{
-          delay: 3500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         spaceBetween={2}
@@ -73,7 +73,8 @@ export default function CustomSwiper({ children, setPage }: CustomSwiperProps) {
             <Flex
               w={"100%"}
               h={"100%"}
-              bgColor={"#D32982"}
+              // bgColor={"#D32982"}
+              backgroundColor={"#BF1266"}
               justifyContent={"center"}
             >
               {child}
