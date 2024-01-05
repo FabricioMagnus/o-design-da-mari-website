@@ -12,31 +12,31 @@ export default function SecondBox() {
       src: "./certificados/edicao-video.jpg",
       alt: "edicao-video",
       id: 1,
-      text: "",
+      text: "Cursando a graduação de Produção audiovisual, com início em  setembro de 2023 e conclusão em março de 2025.",
     },
     {
       src: "./certificados/entrando-jogo.jpg",
       alt: "entrando-jogo",
       id: 2,
-      text: "Curso de Entrando no Jogo da plataforma Udemy",
+      text: "Cursando a graduação de Produção audiovisual, com início em  setembro de 2023 e conclusão em março de 2025.",
     },
     {
       src: "./certificados/wordpress.jpg",
       alt: "wordpress",
       id: 3,
-      text: "Curso de WordPress da plataforma Udemy",
+      text: "Cursando a graduação de Produção audiovisual, com início em  setembro de 2023 e conclusão em março de 2025.",
     },
     {
       src: "./certificados/copy.jpg",
       alt: "copy",
       id: 4,
-      text: "Curso de Copy da plataforma Udemy",
+      text: "Cursando a graduação de Produção audiovisual, com início em  setembro de 2023 e conclusão em março de 2025.",
     },
     {
       src: "./certificados/copy-ini.jpg",
       alt: "copy-ini",
       id: 5,
-      text: "Curso de Copy Iniciante da plataforma Udemy",
+      text: "Cursando a graduação de Produção audiovisual, com início em  setembro de 2023 e conclusão em março de 2025.",
     },
   ];
 
@@ -81,7 +81,8 @@ export default function SecondBox() {
         >
           <Text
             fontFamily={""}
-            fontSize={"3xl"}
+            fontSize={"lg"}
+            fontWeight={"bold"}
             color={"black"}
             textAlign={"center"}
           >
