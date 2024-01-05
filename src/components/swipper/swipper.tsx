@@ -17,9 +17,10 @@ import React, { ReactNode } from "react";
 
 interface CustomSwiperProps {
   children: ReactNode;
+  setPage: (page: number) => void;
 }
 
-export default function CustomSwiper({ children }: CustomSwiperProps) {
+export default function CustomSwiper({ children, setPage }: CustomSwiperProps) {
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
@@ -33,11 +34,12 @@ export default function CustomSwiper({ children }: CustomSwiperProps) {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={2}
         slidesPerView={1}
-        navigation
         pagination={pagination}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper: any) => {}}
-        onSlideChange={() => {}}
+        onSlideChange={(swipper) => {
+          setPage(swipper.realIndex + 1);
+        }}
         className="mySwiper"
       >
         {React.Children.map(children, (child, index) => (
